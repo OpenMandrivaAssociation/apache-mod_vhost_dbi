@@ -23,6 +23,7 @@ BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	file
 BuildRequires:	libdbi-devel >= 0.8.1
 BuildRequires:	apache-mod_dbi_pool-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mod_vhost_dbi creates virtual hosts for Apache 2.0 completely dynamically,
