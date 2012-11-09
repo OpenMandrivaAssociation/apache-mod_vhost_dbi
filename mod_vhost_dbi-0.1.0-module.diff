@@ -1,0 +1,24 @@
+diff -Naur mod_vhost_dbi-0.1.0/src/Makefile.am mod_vhost_dbi-0.1.0.oden/src/Makefile.am
+--- mod_vhost_dbi-0.1.0/src/Makefile.am	2004-10-28 02:38:00.000000000 +0200
++++ mod_vhost_dbi-0.1.0.oden/src/Makefile.am	2006-08-01 15:51:20.000000000 +0200
+@@ -2,7 +2,7 @@
+ 
+ libmod_vhost_dbi_la_SOURCES = mod_vhost_dbi.c
+ libmod_vhost_dbi_la_CFLAGS = -Wall ${MODULE_CFLAGS} ${DBI_CFLAGS}
+-libmod_vhost_dbi_la_LDFLAGS = ${DBI_LDFLAGS} ${DBI_LIBS} -module
++libmod_vhost_dbi_la_LDFLAGS = ${DBI_LDFLAGS} ${DBI_LIBS} -module -avoid-version
+ 
+ lib_LTLIBRARIES = libmod_vhost_dbi.la 
+ 
+diff -Naur mod_vhost_dbi-0.1.0/src/Makefile.in mod_vhost_dbi-0.1.0.oden/src/Makefile.in
+--- mod_vhost_dbi-0.1.0/src/Makefile.in	2004-10-28 02:37:44.000000000 +0200
++++ mod_vhost_dbi-0.1.0.oden/src/Makefile.in	2006-08-01 15:51:45.000000000 +0200
+@@ -196,7 +196,7 @@
+ CLEANFILES = .libs/libmod_vhost_dbi *~
+ libmod_vhost_dbi_la_SOURCES = mod_vhost_dbi.c
+ libmod_vhost_dbi_la_CFLAGS = -Wall ${MODULE_CFLAGS} ${DBI_CFLAGS}
+-libmod_vhost_dbi_la_LDFLAGS = ${DBI_LDFLAGS} ${DBI_LIBS}
++libmod_vhost_dbi_la_LDFLAGS = ${DBI_LDFLAGS} ${DBI_LIBS} -module -avoid-version
+ lib_LTLIBRARIES = libmod_vhost_dbi.la 
+ all: all-am
+ 
