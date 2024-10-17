@@ -9,7 +9,7 @@ Version:	0.1.0
 Release:	%mkrel 9
 Group:		System/Servers
 License:	GPL
-URL:		http://www.outoforder.cc/projects/apache/mod_vhost_dbi/
+URL:		https://www.outoforder.cc/projects/apache/mod_vhost_dbi/
 Source0:	http://www.outoforder.cc/downloads/mod_vhost_dbi/%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}.bz2
 Patch0:		mod_vhost_dbi-0.1.0-module.diff
