@@ -6,7 +6,7 @@
 Summary:	Provides database connection pooling services for the apache web server
 Name:		apache-%{mod_name}
 Version:	0.1.0
-Release:	%mkrel 9
+Release:	10
 Group:		System/Servers
 License:	GPL
 URL:		https://www.outoforder.cc/projects/apache/mod_vhost_dbi/
